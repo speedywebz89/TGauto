@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5672c97ba6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Welcome to TG Auto Solutions</title>
+  </head>
+
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <i class="fa-solid fa-gear fa-1x"></i
+          ><span class="text-primary"> TG</span>
+          Auto Solutions
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#cases">Customers</a></li>
+            <li><a href="index.html#blog">Mission</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Mission</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Challenging Market</h2>
+        <p class="meta">
+          <i class="fa-solid fa-road"></i> Posted by
+          <strong>Tyler Gonzalez</strong> | July 4, 2022
+        </p>
+        <img src="images/blog/blog1.jpg" alt="" />
+        <p>
+          In todays market finding there exotic cars gets more and more
+          challenging. I scour the world looking for high-end exotic cars. With
+          inflation and the unpredictable economy many car collectors are
+          holding their inventory and not selling. We Are forunate enough to
+          have such a large client base that many dealers and collectors are
+          pleased to work with us.
+        </p>
+        <p>
+          The job is simple and stress free, requiring primarily that our
+          associates visit dealerships, develop relationships with sales and/or
+          management staff, and obtain reasonable discounts on specific
+          automobiles. TG Auto Solutions supplies all funding for the
+          acquisitions, so our agents can be as efficient as possible.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-1x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-1x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-1x"></i></a>
+      </div>
+      <p>
+        Copyright &copy; 2024 | <span class="text-primary">TG</span> Auto
+        Solutions
+      </p>
+      <p class="speedywebz">
+        Website created by
+        <a href="mailto:speedywebz89@gmai.com" class="mail-to">SpeedyWebz</a>
+      </p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5672c97ba6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Welcome to TG Auto Solutions</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <i class="fa-solid fa-gear fa-1x"></i
+          ><span class="text-primary"> TG</span>
+          Auto Solutions
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#cases">Customers</a></li>
+            <li><a href="index.html#blog">Mission</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Mission</h1>
+      </div>
+    </header>
+
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Our Mission</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Tyler Gonzalez</strong> | September 11, 2022
+              </p>
+              <p>
+                We strive to give all of our customers a unforgettable
+                experience. Being able to afford your dream car is very
+                difficult. Our clients come to us with the highest expectations,
+                and we ALWAYS deliver.
+              </p>
+              <a href="post.html" class="btn btn-primary">
+                <i class="fas fa-chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h2>Finding the Right Vehicle</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Tyler Gonzalez</strong> | September 5, 2022
+              </p>
+              <p>
+                We will first locate the vehicle through our many sources and
+                different car collectors. After we Locate the car we will fly to
+                where ever the car is located and negotiate a deal in person. We
+                always Deliver.
+              </p>
+              <a href="post.html" class="btn btn-dark">
+                <i class="fas fa-chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>We love Imports</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Tyler Gonzalez</strong> | September 2, 2022
+              </p>
+              <p>
+                My love for cars started with imports and tuners. We also can
+                find just about any import you want. We just found a Supra with
+                the exact mileage a client was looking for last year!
+              </p>
+              <a href="post.html" class="btn btn-dark">
+                <i class="fas fa-chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-1x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-1x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-1x"></i></a>
+      </div>
+      <p>
+        Copyright &copy; 2024 | <span class="text-primary">TG</span> Auto
+        Solutions
+      </p>
+      <p class="speedywebz">
+        Website created by
+        <a href="mailto:speedywebz89@gmai.com" class="mail-to">SpeedyWebz</a>
+      </p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
